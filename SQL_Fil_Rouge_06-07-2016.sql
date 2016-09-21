@@ -27,7 +27,12 @@ CREATE TABLE commercial.Clients(
 	Condition_Reglement_Particulier  VARCHAR(25),
 	Condition_Reglement_Professionel VARCHAR(25),
 	Remise                           INT,
-	Coefficient                      INT
+	Coefficient                      INT,
+	CompAdresLiv					 VARCHAR(80),
+	CompAdresFact					 VARCHAR(80),
+	Tel_Portable					VARCHAR(16),
+	Civilite						 bit
+
 )
 go
 Create index Nom_Prenom_Client on commercial.Clients (Nom_Particulier, Prenom_Particulier)
